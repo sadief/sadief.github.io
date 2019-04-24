@@ -12,146 +12,172 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <li class="me-link current">Me</li>
-            <li class="experience-link">Where I've worked</li>
-            <li class="skills-link">Stuff I can do</li>
-            <li class="projects-link">Stuff I've done</li>
-        </nav>
-        <section class="container me">
-            <h1>Sadie Freeman</h1>
-            <div class="img-job">
-                <h2>Golang Developer &amp;
-                    <br> Web Dev Instructor</h2>
-                <img class="headshot" src="./images/sadie-headshot.JPG" alt="sadie-headshot" />
-            </div>
-            <p class="blurb">Primarily a Golang developer but with a love for learning different programming languages and frameworks, I geek
-                out about data on the regular.
-                <br>I’ve combined my two passions with a part time role teaching at Lighthouse Labs - the very place I learned
-                to code. When I’m not coding I’m deciding what my next cycling adventure is, dancing, traveling, or playing
-                DnD.
-            </p>
-        </section>
-    </header>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <li class="me-link current">Me</li>
+                <li class="experience-link">Where I've worked</li>
+                <li class="skills-link">Stuff I can do</li>
+                <li class="projects-link">Stuff I've done</li>
+            </nav>
+            <section class="container me">
+                <h1>Sadie Freeman</h1>
+                <div class="img-job">
+                    <h2>Golang Developer
+                        <br>&amp;
+                        <br> Web Dev Instructor</h2>
+                    <img class="headshot" src="./images/sadie-headshot.JPG" alt="sadie-headshot" />
+                </div>
+                <p class="blurb">Primarily a Golang developer but with a love for learning different programming languages and frameworks,
+                    I geek out about data on the regular.
+                    <br>I’ve combined my two passions with a part time role teaching at Lighthouse Labs - the very place I learned
+                    to code. When I’m not coding I’m deciding what my next cycling adventure is, dancing, traveling, or playing
+                    DnD.
+                </p>
+            </section>
+        </header>
 
-    <section class="container experience">
-        <h3>SELECT * FROM JOBS WHERE relevant = true;</h3>
-        <section class="experience-flex">
-            <div class="company-date">
-                <h4 class="job-title">Biba Ventures</h4>
-                <p>June 2018 - Present</p>
+        <section class="container experience glide">
+            <h3>SELECT * FROM JOBS WHERE relevant = true;</h3>
+            <div class="experience-button-flex">
+                <button class="prev carousel-button">
+                    <span class="caret-1"></span>
+                    <span class="caret-2"></span>
+                </button>
+                <section class="experience-flex">
+                    <div class="company-date">
+                        <h4 class="job-title">Biba Ventures</h4>
+                        <p>June 2018 - Present</p>
+                    </div>
+                    <div class="title-description">
+                        <h4>Junior Backend Developer</h4>
+                        <p>Wrote a number of backend services in Golang using gRPC, PostgreSQL, Google Cloud, and several third-party
+                            APIs. Built prototypes and created scripts using Go to accomplish a variety of tasks. Built several
+                            web apps using React, Redux, and JavaScript.
+                            <br> Helped to build a data warehouse backed by BigQuery by writing pipelines in GoLang using Google's
+                            DataFlow service, along with several scripts to export data into a format usable by Google DataFlow.</p>
+                    </div>
+                </section>
+                <button class="next carousel-button">
+                    <span class="arrow-right"></span>
+                    <!-- <span class="caret-2"></span> -->
+                </button>
             </div>
-            <div class="title-description">
-                <h4>Junior Backend Developer</h4>
-                <p>Helped to write a number of backend services in GoLang using gRPC, PostgreSQL, Google Cloud, and several
-                    third-party APIs. Also built prototypes and created scripts using Go to accomplish a variety of tasks.
-                    Helped to build several web apps using React, Redux, and JavaScript.
-                    <br> Helped to build a data warehouse backed by BigQuery by writing pipelines in GoLang using Google's DataFlow
-                    service, along with several scripts to export data into a format usable by Google DataFlow.</p>
-            </div>
+            <section class="experience-flex">
+                <div class="company-date">
+                    <h4>Lighthouse Labs</h4>
+                    <p>November 2018 - Present</p>
+                </div>
+                <div class="title-description">
+                    <h4>Instructor, Mentor</h4>
+                    <p>Instructing the Web Development bootcamp on a monthly basis. Lectures include topics like ‘CRUD with
+                        Express’. Instructing the part time Intro to Front End with Javascript course involving an hour long
+                        lecture on the days’ topic and then mentoring the students while they work through their course content.
+                        In the course we cover HTML, CSS, Javascript, and jQuery.</p>
+                </div>
+            </section>
+            <section class="experience-flex">
+                <div class="company-date">
+                    <h4>Jamie Oliver Restaurant Group</h4>
+                    <p>March 2013 - February 2018</p>
+                </div>
+                <div class="title-description">
+                    <h4>Learning &amp; Development Analyst</h4>
+                    <p>Design and Development of training materials for Learning Management System using Adobe Captivate. Implementation,
+                        Configuration, Design, Project Management, and Administration of Learning Management System (Cornerstone)
+                        Creating dashboards, matrixes, and pivot tables to demonstrate Return on Investment and training
+                        needs analysis Facilitation of ‘Train the Trainer’ workshops Line management</p>
+                </div>
+            </section>
         </section>
-        <section class="experience-flex">
-            <div class="company-date">
-                <h4>Lighthouse Labs</h4>
-                <p>November 2018 - Present</p>
-            </div>
-            <div class="title-description">
-                <h4>Instructor, Mentor</h4>
-                <p>Instructing the Web Development bootcamp on a monthly basis. Lectures include topics like ‘CRUD with Express’.
-                    Instructing the part time Intro to Front End with Javascript course involving an hour long lecture on
-                    the days’ topic and then mentoring the students while they work through their course content. In the
-                    course we cover HTML, CSS, Javascript, and jQuery.</p>
-            </div>
-        </section>
-        <section class="experience-flex">
-            <div class="company-date">
-                <h4>Jamie Oliver Restaurant Group</h4>
-                <p>March 2013 - February 2018</p>
-            </div>
-            <div class="title-description">
-                <h4>Learning &amp; Development Analyst</h4>
-                <p>Design and Development of training materials for Learning Management System using Adobe Captivate. Implementation,
-                    Configuration, Design, Project Management, and Administration of Learning Management System (Cornerstone)
-                    Creating dashboards, matrixes, and pivot tables to demonstrate Return on Investment and training needs
-                    analysis Facilitation of ‘Train the Trainer’ workshops Line management</p>
-            </div>
-        </section>
-    </section>
 
-    <section class="container skills">
-        <h3>SELECT * FROM SKILLS WHERE ABILITY = GOOD;</h3>
-        <div class="lang-frame">
-            <section class="languages">
-                <h4>Languages</h4>
-                <ul class="list-skills">
-                    <li>Golang</li>
-                    <li>Javascript</li>
-                    <li>Ruby</li>
-                    <li>HTML &amp; CSS</li>
-                </ul>
-            </section>
-            <section class="frameworks">
-                <h4>Frameworks</h4>
-                <ul class="list-skills">
-                    <li>gRPC</li>
-                    <li>NodeJS</li>
-                    <li>React</li>
-                    <li>Express</li>
-                    <li>jQuery</li>
-                    <li>AJAX</li>
-                    <li>Rails</li>
-                    <li>Knex</li>
-                    <li>Sass</li>
-                </ul>
-            </section>
-        </div>
-        <div class="db-software">
-            <section class="database">
-                <h4> Database/RDMS</h4>
-                <ul class="list-skills">
-                    <li>SQL</li>
-                    <li>PostGres</li>
-                    <li>MySQL</li>
-                    <li>MongoDB</li>
-                </ul>
-            </section>
-            <section class="software">
-                <h4>Software &amp; Tools</h4>
-                <ul class="list-skills">
-                    <li>Google Cloud SDK</li>
-                    <li>Docker</li>
-                    <li>Jenkins</li>
-                    <li>VS Code</li>
-                    <li>Honeybadger</li>
-                    <li>Honeycomb</li>
-                    <li>Git/Github</li>
-                    <li>Adobe Suite</li>
-                </ul>
-            </section>
-        </div>
-    </section>
-    <section class="container projects">
-        <h3>SELECT * FROM PROJECTS WHERE PRIDE > 80%;</h3>
-        <section>
-            <h4>FlexBox Fun</h4>
-            <p>A Flex Box playground I made for my students taking the part-time course at Lighthouse Labs. The Flexbox week
-                can be a bit of a steep learning curve and I thought it would be helpful to have a ‘cheat sheet’ to play
-                around with each different property. Made with Javascript, jQuery, and (surprise) CSS.</p>
+        <section class="container skills">
+            <div class="skills-heading">
+                <h3>SELECT * FROM SKILLS WHERE PROFICIENCY = FLUENT;</h3>
+                <input class="lang-scroll" type="text">
+                <p class="golang-script script">func Addition(a, b int) int { return a + b }</p>
+                <p class="javascript-script script">function Subtraction(a, b) { return b - a }</p>
+            </div>
+            <div class="lang-frame">
+                <section class="languages">
+                    <ul class="list-skills">
+                        <div class="skills-div">
+                            <li class="golang skill">Golang</li>
+                            <li class="javascript skill">Javascript</li>
+                            <li class="ruby skill">Ruby</li>
+                            <li class="html-css skill">HTML &amp; CSS</li>
+                        </div>
+                    </ul>
+                </section>
+                <section class="frameworks">
+                    <ul class="list-skills">
+                        <div class="skills-div">
+                            <li class="grpc skill">gRPC</li>
+                            <li class="nodejs skill">NodeJS</li>
+                            <li class="react skill">React</li>
+                            <li class="express skill">Express</li>
+                            <li class="jquery skill">jQuery</li>
+                        </div>
+                        <div class="skills-div">
+                            <li class="ajax skill">AJAX</li>
+                            <li class="rails skill">Rails</li>
+                            <li class="knex skill">Knex</li>
+                            <li class="sass skill">Sass</li>
+                        </div>
+                    </ul>
+                </section>
+            </div>
+            <div class="db-software">
+                <section class="database">
+                    <ul class="list-skills">
+                        <div class="skills-div">
+                            <li class="sql skill">SQL</li>
+                            <li class="postgres skill">PostGres</li>
+                            <li class="mysql skill">MySQL</li>
+                            <li class="mongodb skill">MongoDB</li>
+                        </div>
+                    </ul>
+                </section>
+                <section class="software">
+                    <ul class="list-skills">
+                        <div class="skills-div">
+                            <li class="google-cloud-sdk skill">Google Cloud SDK</li>
+                            <li class="docker skill">Docker</li>
+                            <li class="jenkins skill">Jenkins</li>
+                        </div>
+                        <div class="skills-div">
+                            <li class="vs-code skill">VS Code</li>
+                            <li class="honeybadger skill">Honeybadger</li>
+                            <li class="honeycomb skill">Honeycomb</li>
+                            <li class="git skill">Git</li>
+                            <li class="adobe-suite skill">Adobe Suite</li>
+                        </div>
+                    </ul>
+                </section>
+            </div>
         </section>
-        <section>
-            <h4>Serial Killer Bingo</h4>
-            <p>Work in progress - An app to play along with the podcast ‘All Killa no Filla’. It’s a long story. Made with Go
-                and Gin.</p>
+        <section class="container projects">
+            <h3>SELECT * FROM PROJECTS WHERE PRIDE > 80%;</h3>
+            <section>
+                <h4>FlexBox Fun</h4>
+                <p>A Flex Box playground I made for my students taking the part-time course at Lighthouse Labs. The Flexbox
+                    week can be a bit of a steep learning curve and I thought it would be helpful to have a ‘cheat sheet’
+                    to play around with each different property. Made with Javascript, jQuery, and (surprise) CSS.</p>
+            </section>
+            <section>
+                <h4>Serial Killer Bingo</h4>
+                <p>Work in progress - An app to play along with the podcast ‘All Killa no Filla’. It’s a long story. Made with
+                    Go and Gin.</p>
+            </section>
+            <section>
+                <h4>BeerCat</h4>
+                <p>Customized beer tours generated by user preferences. I wrote the code for generating the different breweries
+                    and beers. Created with React front end, Rails backend, and a Postgres database. Made for Lighthouse
+                    Labs final project.
+                </p>
+            </section>
         </section>
-        <section>
-            <h4>BeerCat</h4>
-            <p>Customized beer tours generated by user preferences. I wrote the code for generating the different breweries
-                and beers. Created with React front end, Rails backend, and a Postgres database. Made for Lighthouse Labs
-                final project.
-            </p>
-        </section>
-    </section>
+    </div>
 
     <footer>
         <div>
@@ -171,9 +197,9 @@
             <a>Vancouver</a>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./jquery.min.js"></script>
     <script type="text/javascript" src="./index.js"></script>
+
 </body>
 
 </html>

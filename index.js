@@ -1,4 +1,5 @@
 $(function () {
+
     $('.me-link').on('click', function () {
         $('.experience').fadeOut(250)
         $('.skills').fadeOut(250)
@@ -39,4 +40,11 @@ $(function () {
         $('.skills-link').removeClass('current')
         $('.projects').fadeIn(700)
     });
+
+    $('.skill').on('click', function () {
+        var text = $(this).html().toLowerCase().replace(" ", "-")
+        var newClass = `.${text}-script`
+        $('input').val($(newClass).html())
+    });
+
 });
