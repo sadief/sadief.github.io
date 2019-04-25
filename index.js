@@ -1,5 +1,4 @@
 $(function () {
-
     $('.me-link').on('click', function () {
         $('.experience').fadeOut(250)
         $('.skills').fadeOut(250)

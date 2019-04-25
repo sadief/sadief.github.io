@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owl.theme.default.min.css">
     <title>Document</title>
 
 </head>
@@ -36,33 +38,26 @@
                 </p>
             </section>
         </header>
-
-        <section class="container experience glide">
-            <h3>SELECT * FROM JOBS WHERE relevant = true;</h3>
-            <div class="experience-button-flex">
-                <button class="prev carousel-button">
-                    <span class="caret-1"></span>
-                    <span class="caret-2"></span>
-                </button>
-                <section class="experience-flex">
-                    <div class="company-date">
-                        <h4 class="job-title">Biba Ventures</h4>
-                        <p>June 2018 - Present</p>
-                    </div>
-                    <div class="title-description">
-                        <h4>Junior Backend Developer</h4>
-                        <p>Wrote a number of backend services in Golang using gRPC, PostgreSQL, Google Cloud, and several third-party
-                            APIs. Built prototypes and created scripts using Go to accomplish a variety of tasks. Built several
-                            web apps using React, Redux, and JavaScript.
-                            <br> Helped to build a data warehouse backed by BigQuery by writing pipelines in GoLang using Google's
-                            DataFlow service, along with several scripts to export data into a format usable by Google DataFlow.</p>
-                    </div>
-                </section>
-                <button class="next carousel-button">
-                    <span class="arrow-right"></span>
-                    <!-- <span class="caret-2"></span> -->
-                </button>
+        <section class="container experience">
+            <div class="center-sql">
+                <pre class="sql-neo" style='color:#55cc66;background:#001800;'><span style='color:#508050; font-weight:bold; '>SELECT</span> <span style='color:#808030; '>*</span> <span style='color:#508050; font-weight:bold; '>FROM</span> jobs <span style='color:#508050; font-weight:bold; '>WHERE</span> relevant <span style='color:#808030; '>=</span> <span style='color:#508050; font-weight:bold; '>true</span><span style='color:#808030; '>;</span>
+                </pre>
+                <!--Created using ToHtml.com on 2019-04-25 02:29:04 UTC -->
             </div>
+            <section class="experience-flex">
+                <div class="company-date">
+                    <h4 class="job-title">Biba Ventures</h4>
+                    <p>June 2018 - Present</p>
+                </div>
+                <div class="title-description">
+                    <h4>Junior Backend Developer</h4>
+                    <p>Wrote a number of backend services in Golang using gRPC, PostgreSQL, Google Cloud, and several third-party
+                        APIs. Built prototypes and created scripts using Go to accomplish a variety of tasks. Built several
+                        web apps using React, Redux, and JavaScript.
+                        <br> Helped to build a data warehouse backed by BigQuery by writing pipelines in GoLang using Google's
+                        DataFlow service, along with several scripts to export data into a format usable by Google DataFlow.</p>
+                </div>
+            </section>
             <section class="experience-flex">
                 <div class="company-date">
                     <h4>Lighthouse Labs</h4>
@@ -78,7 +73,8 @@
             </section>
             <section class="experience-flex">
                 <div class="company-date">
-                    <h4>Jamie Oliver Restaurant Group</h4>
+                    <h4>Jamie Oliver
+                        <br> Restaurant Group</h4>
                     <p>March 2013 - February 2018</p>
                 </div>
                 <div class="title-description">
@@ -93,71 +89,80 @@
 
         <section class="container skills">
             <div class="skills-heading">
-                <h3>SELECT * FROM SKILLS WHERE PROFICIENCY = FLUENT;</h3>
-                <input class="lang-scroll" type="text">
+                <div class="center-sql">
+                    <pre class="sql-neo" style='color:#55cc66;background:#001800;'><span style='color:#508050; font-weight:bold; '>SELECT</span> <span style='color:#808030; '>*</span> <span style='color:#508050; font-weight:bold; '>FROM</span> skills <span style='color:#508050; font-weight:bold; '>WHERE</span> proficiency <span style='color:#808030; '>=</span> <span style='color:#508050; font-weight:bold; '>"fluent"</span><span style='color:#808030; '>;</span>
+                            </pre>
+                    <!--Created using ToHtml.com on 2019-04-25 02:29:04 UTC -->
+                </div>
+                <!-- <input class="lang-scroll" type="text">
                 <p class="golang-script script">func Addition(a, b int) int { return a + b }</p>
-                <p class="javascript-script script">function Subtraction(a, b) { return b - a }</p>
+                <p class="javascript-script script">function Subtraction(a, b) { return b - a }</p> -->
             </div>
             <div class="lang-frame">
-                <section class="languages">
-                    <ul class="list-skills">
-                        <div class="skills-div">
-                            <li class="golang skill">Golang</li>
-                            <li class="javascript skill">Javascript</li>
-                            <li class="ruby skill">Ruby</li>
-                            <li class="html-css skill">HTML &amp; CSS</li>
-                        </div>
-                    </ul>
-                </section>
-                <section class="frameworks">
-                    <ul class="list-skills">
-                        <div class="skills-div">
-                            <li class="grpc skill">gRPC</li>
-                            <li class="nodejs skill">NodeJS</li>
-                            <li class="react skill">React</li>
-                            <li class="express skill">Express</li>
-                            <li class="jquery skill">jQuery</li>
-                        </div>
-                        <div class="skills-div">
-                            <li class="ajax skill">AJAX</li>
-                            <li class="rails skill">Rails</li>
-                            <li class="knex skill">Knex</li>
-                            <li class="sass skill">Sass</li>
-                        </div>
-                    </ul>
-                </section>
-            </div>
-            <div class="db-software">
-                <section class="database">
-                    <ul class="list-skills">
-                        <div class="skills-div">
-                            <li class="sql skill">SQL</li>
-                            <li class="postgres skill">PostGres</li>
-                            <li class="mysql skill">MySQL</li>
-                            <li class="mongodb skill">MongoDB</li>
-                        </div>
-                    </ul>
-                </section>
-                <section class="software">
-                    <ul class="list-skills">
-                        <div class="skills-div">
-                            <li class="google-cloud-sdk skill">Google Cloud SDK</li>
-                            <li class="docker skill">Docker</li>
-                            <li class="jenkins skill">Jenkins</li>
-                        </div>
-                        <div class="skills-div">
-                            <li class="vs-code skill">VS Code</li>
-                            <li class="honeybadger skill">Honeybadger</li>
-                            <li class="honeycomb skill">Honeycomb</li>
-                            <li class="git skill">Git</li>
-                            <li class="adobe-suite skill">Adobe Suite</li>
-                        </div>
-                    </ul>
-                </section>
+                <img src="./images/skills-word-cloud.png" />
+                <!-- <section class="languages">
+                <ul class="list-skills">
+                    <div class="skills-div">
+                        <li class="golang skill">Golang</li>
+                        <li class="javascript skill">Javascript</li>
+                        <li class="ruby skill">Ruby</li>
+                        <li class="html-css skill">HTML &amp; CSS</li>
+                    </div>
+                </ul>
+        </section>
+        <section class="frameworks">
+            <ul class="list-skills">
+                <div class="skills-div">
+                    <li class="grpc skill">gRPC</li>
+                    <li class="nodejs skill">NodeJS</li>
+                    <li class="react skill">React</li>
+                    <li class="express skill">Express</li>
+                    <li class="jquery skill">jQuery</li>
+                </div>
+                <div class="skills-div">
+                    <li class="ajax skill">AJAX</li>
+                    <li class="rails skill">Rails</li>
+                    <li class="knex skill">Knex</li>
+                    <li class="sass skill">Sass</li>
+                </div>
+            </ul>
+        </section>
+        </div>
+        <div class="db-software">
+            <section class="database">
+                <ul class="list-skills">
+                    <div class="skills-div">
+                        <li class="sql skill">SQL</li>
+                        <li class="postgres skill">PostGres</li>
+                        <li class="mysql skill">MySQL</li>
+                        <li class="mongodb skill">MongoDB</li>
+                    </div>
+                </ul>
+            </section>
+            <section class="software">
+                <ul class="list-skills">
+                    <div class="skills-div">
+                        <li class="google-cloud-sdk skill">Google Cloud SDK</li>
+                        <li class="docker skill">Docker</li>
+                        <li class="jenkins skill">Jenkins</li>
+                    </div>
+                    <div class="skills-div">
+                        <li class="vs-code skill">VS Code</li>
+                        <li class="honeybadger skill">Honeybadger</li>
+                        <li class="honeycomb skill">Honeycomb</li>
+                        <li class="git skill">Git</li>
+                        <li class="adobe-suite skill">Adobe Suite</li>
+                    </div>
+                </ul>
+            </section> -->
             </div>
         </section>
         <section class="container projects">
-            <h3>SELECT * FROM PROJECTS WHERE PRIDE > 80%;</h3>
+            <div class="center-sql">
+                <pre class="sql-neo" style='color:#55cc66;background:#001800;'><span style='color:#508050; font-weight:bold; '>SELECT</span> <span style='color:#808030; '>*</span> <span style='color:#508050; font-weight:bold; '>FROM</span> projects <span style='color:#508050; font-weight:bold; '>WHERE</span> pride <span style='color:#808030; '>></span> <span style='color:#508050; font-weight:bold; '>"80%"</span><span style='color:#808030; '>;</span>
+                                </pre>
+                <!--Created using ToHtml.com on 2019-04-25 02:29:04 UTC -->
+            </div>
             <section>
                 <h4>FlexBox Fun</h4>
                 <p>A Flex Box playground I made for my students taking the part-time course at Lighthouse Labs. The Flexbox
@@ -180,25 +185,26 @@
     </div>
 
     <footer>
-        <div>
-            <img src="./images/linkedin-logo.png" />
+        <div class="icon-text">
+            <img class="icons" src="./images/linkedin-logo.png" />
             <a href="https://www.linkedin.com/in/sadie-freeman-589a5358/">Linkedin</a>
         </div>
-        <div>
-            <img src="./images/github-logo.png" />
-            <a href="https://github.com/sadief">Github</a>
+        <div class="icon-text">
+            <img class="icons" src="./images/github-logo.png" />
+            <a href="https://github.com/sadief">sadief</a>
         </div>
-        <div>
-            <img src="./images/email.png" />
+        <div class="icon-text">
+            <img class="icons" src="./images/email.png" />
             <a href="mailto:sadiefreeman@gmail.com">sadiefreeman@gmail.com</a>
         </div>
-        <div>
-            <img src="./images/location.png" />
+        <div class="icon-text">
+            <img class="icons" src="./images/location.png" />
             <a>Vancouver</a>
         </div>
     </footer>
     <script type="text/javascript" src="./jquery.min.js"></script>
     <script type="text/javascript" src="./index.js"></script>
+    <script src="vendor/owl.carousel.min.js"></script>
 
 </body>
 
