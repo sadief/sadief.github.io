@@ -1,0 +1,283 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+html {
+    font-family: 'Fira Sans', sans-serif;
+    color: #D1D5DE;
+}
+
+body {
+    background-color: #1C2321;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1rem;;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1.75rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+h4 {
+    letter-spacing: 1px;
+    font-size: 2rem;
+    color: #456990;
+    margin-bottom: .75rem;
+}
+
+
+.headshot {
+    height: 200px;
+    border-radius: 50%;
+}
+
+.container {
+    margin: 0 auto;
+    width: 950px;
+    padding: 2rem;
+}
+
+.img-job {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #456990;
+}
+
+.blurb {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 3rem 2.5rem 2.5rem 2.5rem;
+}
+
+nav {
+    list-style: none;
+    text-transform: uppercase;
+    color: #1C2321;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem;
+    background-color: #5E6572;
+}
+
+nav li {
+    cursor: pointer;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #363D3B;
+    flex-shrink: 0;
+    padding: 1rem;
+}
+
+footer a {
+    color: #D1D5DE;
+    text-decoration: none;
+}
+
+.experience {
+    display: none;
+}
+
+.skills {
+    display: none;
+}
+
+.projects {
+    display: none;
+}
+
+.current{
+    color: #D1D5DE;
+}
+
+.experience-flex {
+    display: flex;
+}
+
+.company-date {
+    flex: 2;
+}
+
+.title-description {
+    flex: 3;
+}
+
+.lang-frame {
+    display:flex;
+    justify-content: space-between;
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+}
+
+.frameworks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 3;
+}
+
+.db-software {
+    display: flex;
+}
+
+.database {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+}
+
+.software {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+}
+
+.list-skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-div {
+    padding: 0 2rem 2rem 0;;
+}
+
+.languages, .frameworks, .database, .software {
+    height: 400px;
+} 
+
+.golang:hover, .grpc:hover, .sql:hover, .postgres:hover, .google-cloud-sdk:hover, .docker:hover, .vs-code:hover, .git:hover {
+    font-size: 3.25rem;
+}
+
+.golang, .grpc, .sql, .postgres, .google-cloud-sdk, .docker, .vs-code, .git {
+    color:#217ddf;
+    font-size: 3rem;
+    transition: font-size 0.5s linear 0s;
+}
+
+.javascript:hover, .nodejs:hover, .express:hover, .mysql:hover, .jenkins:hover, .honeybadger:hover, .honeycomb:hover {
+    font-size: 2.25rem;
+}
+
+.javascript, .nodejs, .express, .mysql, .jenkins, .honeybadger, .honeycomb {
+    color: #6897ca;
+    font-size: 2rem;
+    transition: font-size 0.5s linear 0s;
+    
+}
+
+.ruby:hover, .rails:hover, .knex:hover, .mongodb:hover, .adobe-suite:hover  {
+    font-size: 1.75rem;
+}
+
+.ruby, .rails, .knex, .mongodb, .adobe-suite  {
+    color: #87a1bd;
+    font-size: 1.5rem;
+    transition: font-size 0.5s linear 0s;
+    
+}
+
+.html-css:hover, .react:hover, .jquery:hover, .ajax:hover, .sass:hover {
+    font-size: 2.25rem;
+}
+
+.html-css, .react, .jquery, .ajax, .sass {
+    color:#487bb1; 
+    font-size: 2rem;
+    transition: font-size 0.5s linear 0s;
+    
+}
+/* 
+.skill {
+    cursor: pointer;
+} */
+
+input.lang-scroll {
+    font-size: 2rem;
+    color: #456990;
+}
+
+.lang-scroll {
+    width: 650px;
+    height: 50px;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 2rem;
+    background-color:#b0b0b0;
+    border: 1px solid #dbdada;
+}
+
+.skills-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.script {
+    display: none;
+}
+
+.icons {
+    height: 20px;
+    padding: 0 .75rem 0 .75rem;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.sql-neo {
+    font-size: 1.5rem;
+    text-align: center;
+    /* width: 65%; */
+    padding: 1.5rem 1rem 0 1rem;
+}
+
+.center-sql {
+    display: flex;
+    justify-content: center;
+}
