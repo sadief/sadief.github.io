@@ -68,7 +68,9 @@ h4 {
 .blurb {
   text-align: center;
   letter-spacing: 1px;
+  line-height: 2;
   padding: 3rem 2.5rem 2.5rem 2.5rem;
+  font-size: 1.2rem;
 }
 
 nav {
@@ -105,6 +107,9 @@ footer {
 footer a {
   color: #d1d5de;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .experience {
@@ -129,6 +134,10 @@ footer a {
 
 .company-date {
   flex: 2;
+}
+
+.job-title {
+  color: #487bb1;
 }
 
 .title-description {
@@ -310,7 +319,6 @@ footer a {
   }
 
   footer {
-    flex-direction: column;
     flex-wrap: wrap;
   }
 
@@ -320,9 +328,30 @@ footer a {
 
   .blurb {
     padding: 0.15rem;
+    font-size: 1rem;
   }
 
   h1 {
     margin-bottom: 0;
+  }
+
+  .experience-flex {
+    flex-direction: column;
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+
+  .title-description {
+    margin-bottom: 2rem;
+  }
+
+  footer a {
+    flex-direction: row;
+  }
+
+  footer span {
+    display: none;
   }
 }
